@@ -42,8 +42,9 @@ conditions:
 
 actions:
   - alias: "Notify that a person has entered the zone"
-    service: notify.mobile_app
+    domain: mobile_app
+    type: notify
     target:
       device_id: !input notify_device
     data:
-      message: "{{ person_name }} has entered {{ zone_state }}"
+        message: "{{ person_name }} has entered {{ zone_state }}"
