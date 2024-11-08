@@ -2,7 +2,7 @@ blueprint:
   name: Zone Entering Notification
   description: Send a notification to a device when a person enters a specific zone.
   domain: automation
-  source_url:
+  source_url: https://github.com/Berloedie1985/blueprint/blob/main/entering_zone.yaml
   author: Arickx Pieter
   input:
     person_entity:
